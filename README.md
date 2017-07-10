@@ -6,6 +6,11 @@ Consist of one regex parser, one state machine supporting e-NFA and one state ma
 <br>
 main.cpp consists of some test codes.
 
+# Grammer Support
+*, +, ?, ., [], [^], {n}, {n,m}, {n,}, |, \, 
+<br>
+\b, \B, \d, \D, \w, \W, \s, \S
+
 # Performance
 To parse a regex R"([0-9]+|/\*([^\*]|\*+[^\*/])*\*+/|//.*\n)" and select digits and annotation from a 3.64MB file, which contains 3,818,268 bytes or characters or symbols: <br>
 e-NFA machine selects 23870 targets in 36s, throughput 106063 symbols per second; <br>
